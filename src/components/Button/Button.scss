@@ -5,4 +5,41 @@
  @include buttons;
  width: 30px;
  height: 30px;   
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+
+ &.visible{
+     border-color: #7b7b7b ;
+     border-width: 1px ;
+ }
+ span{
+     margin-left: 2px ;
+     font-size: 1.1em;
+ }
+ &.value-1 {
+     color: rgb(0, 162, 255);
+ }
+ &.value-2 {
+    color: rgb(15, 255, 155);
+}
+&.value-3 {
+    color: rgb(255, 11, 72);
+}
+&.value-4 {
+    color: rgb(186, 13, 255);
+}
+&.value-5 {
+    color: rgb(121, 2, 2);
+}
+&.value-6 {
+    color: rgb(4, 95, 86);
+}
+&.value-7 {
+    color: rgb(173, 173, 173);
+}
+&.value-8 {
+    color: rgb(214, 253, 38);
+}
 }
