@@ -1,4 +1,5 @@
 import {MAX_ROWS, MAX_COLS, NO_OF_BOMBS} from "../constants";
+import React from 'react';
 import {Cell,CellValue,CellState} from "../../types";
 export const generateCells = (): Cell[][] => {
     let cells: Cell[][]= [];
@@ -22,7 +23,7 @@ export const generateCells = (): Cell[][] => {
             cells = cells.map((row, rowIndex) => row.map((cell, colIndex)=>{
                 if(randomRow === rowIndex && randomCol === colIndex){
                     return{
-                        ... cell,
+                        ...cell,
                         value: CellValue.bomb
                     }
                 }
@@ -77,7 +78,7 @@ export const generateCells = (): Cell[][] => {
         } 
         if (numberOfBombs > 0){
             cells[rowIndex][colIndex] ={
-                ... currentCell,
+                ...currentCell,
                value: numberOfBombs 
             };
         }
