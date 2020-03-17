@@ -32,7 +32,7 @@ const grabAllAdjancentCells = (cells: Cell[][], rowParam: number, colParam: numb
         bottomRightCell,
     }
 }
-}
+
 
 export const generateCells = (): Cell[][] => {
     let cells: Cell[][] = [];
