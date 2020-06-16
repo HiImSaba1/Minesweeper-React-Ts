@@ -60,6 +60,7 @@ export const generateCells = (): Cell[][] => {
                         value: CellValue.bomb
                     }
                 }
+                
                 return cell;
             })
             );
