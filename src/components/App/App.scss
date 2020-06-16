@@ -1,20 +1,26 @@
 @import "../../styles/index.scss";
-
+body{
+    background-image: linear-gradient(to bottom left, #868f96 , #596164 );
+}
 .App{
     @include borders(white, #999);
-    background: #dad7d7;
+    background-image: linear-gradient(to bottom right, #fdfcfb  ,  #ecdccf);
     padding: 16px;
+    border-radius: 6px;
+    box-shadow: 15px 15px 15px rgba(70, 60, 60, 0.25) ;
+    
 }
 .Header{
     @include borders(white, #7b7b7b);
-    background: #cfcece;
+    background-image: linear-gradient(to bottom right, #f3f3f3 ,  #e2eaf7);
     padding: 10px 12px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .Body{
-    @include borders( #7b7b7b ,white);
+    @include borders( #797878 ,#c9c9c9);
     margin-top: 16px;
     display: grid;
     grid-template-rows: repeat(9,1fr);
@@ -25,6 +31,7 @@
     @include buttons;
     width: 52px;
     height: 52px;
+    border-radius: 5px;
     font-size: 35px;
     display: flex;
     justify-content: center;
